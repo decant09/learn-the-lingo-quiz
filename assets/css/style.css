@@ -6,7 +6,7 @@
     --chinese-black-color: #0F0916;
     --imperial-color: #4C2F6C;
     --white-color:#fff;
-    transition: all 150ms;
+    --transition: all 150ms;
 }
 
 * {
@@ -49,4 +49,49 @@ h2 {
 
 .wrapper > * {
     width: 100%;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+/* button */
+
+.btn {
+    font-size: 2rem;
+    padding: 1rem 0.5rem;
+    width: 20rem;
+    background-color: var(--white-color);
+    border: none;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: var(--chinese-black-color);
+    font-weight: 800;
+    margin: 0 auto 0 auto;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    transition: var(--transition);
+    box-shadow: 0 0.4rem 0 0 #bbb;
+}
+
+.btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 0 0 #a7a7a7;
+    transform: translateY(-0.1rem);
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+.btn[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
 }
