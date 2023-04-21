@@ -23,15 +23,30 @@ body {
 }
 
 h1, h2 {
-    margin-bottom: 1rem;
+    margin-bottom: 4rem;
 }
 
 h1 {
     font-size: 4rem;
-    margin-bottom: 5rem;
 }
 
 h2 {
     font-size: 3rem;
     font-weight: 800;
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.wrapper > * {
+    width: 100%;
 }
