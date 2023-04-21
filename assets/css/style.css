@@ -5,6 +5,7 @@
     --bright-gray-color: #EDEAF0;
     --chinese-black-color: #0F0916;
     --imperial-color: #4C2F6C;
+    --white-color:#fff;
     transition: all 150ms;
 }
 
@@ -19,4 +20,18 @@ body {
     min-height: 100vh;
     color: var(--chinese-black-color);
     background-color: var(--bright-gray-color);
+}
+
+h1, h2 {
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 4rem;
+    margin-bottom: 5rem;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 800;
 }
