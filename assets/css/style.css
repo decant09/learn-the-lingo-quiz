@@ -106,7 +106,7 @@ h2 {
     display: flex;
     background-color: var(--white-color);
     padding: 1.5rem 4rem;
-    height: 50vh;
+    min-height: fit-content;
     border-radius: 1.5rem;
     box-shadow: 0 0 1rem 0 #bbb;
 }
