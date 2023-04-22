@@ -91,7 +91,7 @@ h2 {
 }
 
 .btn:active {
-    transform: scale(0.95);
+    transform: scale(0.97);
 }
 
 .btn[disabled]:hover {
@@ -100,3 +100,37 @@ h2 {
     transform: none;
 }
 
+/* quiz */
+
+#quiz-container {
+    display: flex;
+    background-color: var(--white-color);
+    padding: 1.5rem 4rem;
+    height: 50vh;
+    border-radius: 1.5rem;
+    box-shadow: 0 0 1rem 0 #bbb;
+}
+
+#quiz {
+    width: 100%;
+}
+
+.answer-wrapper {
+    display: flex;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    font-size: 2rem;
+    color: var(--white-color);
+    border: 0.25rem solid var(--imperial-color);
+    background-color: var(--imperial-color);
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.5rem;
+    margin: 0.75rem 0;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.answer-wrapper:hover {
+    background-color: var(--bright-gray-color);
+    color: var(--imperial-color);
+}
