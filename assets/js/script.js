@@ -1,5 +1,7 @@
 const question = document.getElementById("question");
 const answers = Array.from(document.getElementsByClassName("answer-text"));
+const questionNumberValue = document.getElementById('question-number');
+const scoreTotalValue = document.getElementById('score-total');
 
 let displayedQuestion = {};
 let allowingAnswers =  false;
