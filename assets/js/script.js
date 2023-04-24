@@ -75,4 +75,10 @@ function getNextQuestion() {
         allowingAnswers =  true;
 };
 
+answers.forEach(function(answer) {
+    answer.addEventListener('click', function(e) {
+        console.log(e.target)
+    });
+});
+
 startQuiz();
