@@ -134,3 +134,17 @@ h2 {
     background-color: var(--bright-gray-color);
     color: var(--imperial-color);
 }
+
+.answer-text {
+    width: 100%;
+}
+
+.correct {
+    background-color: green;
+    border: green;
+}
+
+.incorrect {
+    background-color: red;
+    border: red;
+}

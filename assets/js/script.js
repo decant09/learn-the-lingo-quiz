@@ -14,7 +14,7 @@ let questionsArray = [
         answer2: 'Something terrible has happened',
         answer3: 'Is the dog dead',
         answer4: 'The flag is at half mast',
-        correct: 1
+        correctAnswer: 1
     },
     {
         question: 'If someone asked for some juice while at the shop they would expect',
@@ -22,7 +22,7 @@ let questionsArray = [
         answer2: 'Fruit juice',
         answer3: 'Irn Bru',
         answer4: 'Gossip',
-        correct: 3
+        correctAnswer: 3
     },
     {
         question: 'Which of the following words does not mean girl',
@@ -30,7 +30,7 @@ let questionsArray = [
         answer2: 'Hen',
         answer3: 'Lassie',
         answer4: 'Loon',
-        correct: 4
+        correctAnswer: 4
     },
     {
         question: '“Tea-time” is usually around',
@@ -38,7 +38,7 @@ let questionsArray = [
         answer2: '11am to 1pm',
         answer3: '3pm to 5pm',
         answer4: '6pm to 8pm',
-        correct: 4
+        correctAnswer: 4
     },
     {
         question: 'If you were “away to do some messages”, you would be',
@@ -46,7 +46,7 @@ let questionsArray = [
         answer2: 'Writing postcards',
         answer3: 'Checking your email',
         answer4: 'Going on a date',
-        correct: 1
+        correctAnswer: 1
     } 
 ]
 
@@ -60,24 +60,41 @@ function startQuiz() {
 }
 
 function getNextQuestion() {
+    if(questionsPool.length === 0 || questionNumber >= quizLength) {
+        return window.location.assign("/quiz_over.html");
+    };
     questionNumber++;
     const questionIndex = Math.floor(Math.random() * questionsPool.length);
-        displayedQuestion = questionsPool[questionIndex];
-        question.innerText = displayedQuestion.question;
+    displayedQuestion = questionsPool[questionIndex];
+    question.innerText = displayedQuestion.question;
 
-        answers.forEach(function(answer) {
-            const number = answer.dataset["option"];
-            answer.innerText = displayedQuestion["answer" + number];
-        });
+    answers.forEach(function(answer) {
+        const number = answer.dataset["option"];
+        answer.innerText = displayedQuestion["answer" + number];
+    });
 
-        questionsPool.splice(questionIndex, 1);
-
-        allowingAnswers =  true;
+    questionsPool.splice(questionIndex, 1);
+    allowingAnswers =  true;
 };
 
 answers.forEach(function(answer) {
     answer.addEventListener('click', function(e) {
-        console.log(e.target)
+        if (!allowingAnswers) return;
+
+        allowingAnswers = false;
+        const chosenOption = e.target;
+        const chosenAnswer = chosenOption.dataset["option"];
+
+        let assignClass = 'incorrect';
+            if (chosenAnswer == displayedQuestion.correctAnswer) {
+                assignClass = 'correct';
+            };
+        
+        chosenOption.parentElement.classList.add(assignClass);
+        setTimeout( function() {
+            chosenOption.parentElement.classList.remove(assignClass);
+            getNextQuestion();
+        }, 1000);
     });
 });
 
