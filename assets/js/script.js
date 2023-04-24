@@ -32,18 +32,31 @@ let questionsArray = [
         answerD: 'Loon',
         correct: 4
     },
+    {
+        question: '“Tea-time” is usually around',
+        answerA: '8am to 10am',
+        answerB: '11am to 1pm',
+        answerC: '3pm to 5pm',
+        answerD: '6pm to 8pm',
+        correct: 4
+    },
+    {
+        question: 'If you were “away to do some messages”, you would be',
+        answerA: 'Doing some food shopping',
+        answerB: 'Writing postcards',
+        answerC: 'Checking your email',
+        answerD: 'Going on a date',
+        correct: 1
+    } 
 ]
 
 const quizLength = 5;
 
-startQuiz = () => {
+function startQuiz() {
     questionNumber = 0;
     scoreTotal = 0;
-    questionsPool = [...questionsArray]
-    console.log(questionsPool);
+    questionsPool = [...questionsArray];
     getNextQuestion();
 }
-
-
 
 startQuiz();
