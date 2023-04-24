@@ -33,3 +33,17 @@ let questionsArray = [
         correct: 4
     },
 ]
+
+const quizLength = 5;
+
+startQuiz = () => {
+    questionNumber = 0;
+    scoreTotal = 0;
+    questionsPool = [...questionsArray]
+    console.log(questionsPool);
+    getNextQuestion();
+}
+
+
+
+startQuiz();
