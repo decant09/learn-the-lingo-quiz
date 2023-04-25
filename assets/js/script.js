@@ -231,4 +231,18 @@ increaseScore = function(num) {
     scoreTotalValue.innerText = scoreTotal;
 };
 
+// quiz over
+
+const playerName = document.getElementById('player-name');
+const save = document.getElementById('save');
+
+playerName.addEventListener('keyup', function() {
+    save.disabled = !playerName.value
+})
+
+saveResult = function(e) {
+    console.log("clicked");
+    e.preventDefault();
+};
+
 startQuiz();

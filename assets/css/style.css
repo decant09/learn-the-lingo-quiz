@@ -187,7 +187,3 @@ input {
     border: none;
     text-align: center;
 }
-
-input:hover {
-    transform: translateY(-0.1rem);
-}
