@@ -77,7 +77,7 @@ h2 {
     text-align: center;
     color: var(--chinese-black-color);
     font-weight: 800;
-    margin: 0 auto 0 auto;
+    margin: 0 auto 1rem;
     text-transform: uppercase;
     letter-spacing: 0.2rem;
     transition: var(--transition);
@@ -163,4 +163,31 @@ h2 {
 
 #score-total {
     text-align: right;
+}
+
+/* quiz over page */
+
+#over {
+    text-align: center;
+}
+
+/* form */
+
+form {
+    display: flex;
+    align-items: center;
+}
+
+input {
+    width: 20rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    padding: 1rem 0.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    text-align: center;
+}
+
+input:hover {
+    transform: translateY(-0.1rem);
 }

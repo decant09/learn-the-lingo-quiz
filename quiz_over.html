@@ -12,8 +12,15 @@
     <title>Learn the Lingo Quiz</title>
 </head>
 <body>
-    <div>
-        <h1>Over</h1>
+    <div class="wrapper">
+        <div id="over" class="justify-center flex-column">
+            <h1 #score-result>0</h1>
+            <form class="flex-column">
+                <input type="text" name="player-name" id="player-name" placeholder="Your Name"/>
+                <button type="submit" class="btn" id="save" onclick="saveResult(event)">Save</button>                
+            </form>
+            <a class="btn" href="index.html">Try Again</a>
+        </div>
     </div>
     <script src="assets/js/script.js"></script>
 </body>
