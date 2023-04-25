@@ -4,7 +4,8 @@ const currentPlayerResult = localStorage.getItem('currentPlayerResult');
 const scoreResult = document.getElementById('score-result');
 
 const leaderboard = JSON.parse(localStorage.getItem('leaderboard')) || [];
-console.log(leaderboard);
+
+const leaderboardDisplayMax = 3;
 
 scoreResult.innerText = `You scored: ${currentPlayerResult}`;
 
@@ -13,7 +14,6 @@ playerName.addEventListener('keyup', function() {
 })
 
 saveResult = function(e) {
-    console.log("clicked");
     e.preventDefault();
 
     const result = {
@@ -21,5 +21,11 @@ saveResult = function(e) {
         name: playerName.value
     };
     leaderboard.push(result);
-    console.log(leaderboard);
+    leaderboard.sort(function(a, b) {
+        return b.result - a.result;
+    });
+    leaderboard.splice(3);
+    
+    localStorage.setItem('leaderboard', JSON.stringify(leaderboard));
+    window.location.assign('index.html');
 };
