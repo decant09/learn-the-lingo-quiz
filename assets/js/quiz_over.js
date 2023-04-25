@@ -15,4 +15,11 @@ playerName.addEventListener('keyup', function() {
 saveResult = function(e) {
     console.log("clicked");
     e.preventDefault();
+
+    const result = {
+        result: currentPlayerResult,
+        name: playerName.value
+    };
+    leaderboard.push(result);
+    console.log(leaderboard);
 };
