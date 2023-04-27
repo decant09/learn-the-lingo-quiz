@@ -21,7 +21,7 @@ function startQuiz() {
 function getNextQuestion() {
     if(questionsPool.length === 0 || questionNumber >= quizLength) {
         localStorage.setItem('currentPlayerResult', scoreTotal);
-        return window.location.assign("../../quiz_over.html");
+        return window.location.assign("../quiz_over.html");
     };
     questionNumber++;
     questionNumberValue.innerText = `${questionNumber}/${quizLength}`;
