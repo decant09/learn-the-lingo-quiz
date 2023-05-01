@@ -115,12 +115,6 @@ h2 {
     transform: scale(0.97);
 }
 
-.btn[disabled]:hover {
-    cursor: not-allowed;
-    box-shadow: none;
-    transform: none;
-}
-
 /* quiz */
 
 #quiz-container {
