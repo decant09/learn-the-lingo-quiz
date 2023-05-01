@@ -15,12 +15,8 @@ const toggleIcon = document.querySelector(".toggle-icon");
 
 toggleIcon.addEventListener('click', function() {
     document.body.classList.toggle('dark')
-    if('dark') {
-        toggleIcon.firstElementChild.className = "far fa-moon"
-    }
-    else {
-        toggleIcon.firstElementChild.className = "far fa-sun"
-    }
+    ? (toggleIcon.firstElementChild.className = 'far fa-moon')
+    : (toggleIcon.firstElementChild.className = 'far fa-sun');
 });
 
 function startQuiz() {
@@ -33,7 +29,7 @@ function startQuiz() {
 function getNextQuestion() {
     if(questionsPool.length === 0 || questionNumber >= quizLength) {
         localStorage.setItem('currentPlayerResult', scoreTotal);
-        return window.location.assign("./quiz_over.html");
+        return window.location.assign('quiz_over.html');
     };
     questionNumber++;
     questionNumberValue.innerText = `${questionNumber}/${quizLength}`;
