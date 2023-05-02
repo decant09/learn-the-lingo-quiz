@@ -78,6 +78,8 @@ h2 {
     text-align: center;
 }
 
+/* flex classes */
+
 .flex-column {
     display: flex;
     flex-direction: column;
@@ -126,7 +128,7 @@ h2 {
     transform: scale(0.97);
 }
 
-/* quiz */
+/* quiz area */
 
 #quiz-container {
     display: flex;
@@ -140,6 +142,8 @@ h2 {
 #quiz {
     width: 100%;
 }
+
+/* quiz answers */
 
 .answer-wrapper {
     display: flex;
@@ -205,23 +209,6 @@ h2 {
 /* quiz over page */
 
 #over {
-    text-align: center;
-}
-
-/* form */
-
-form {
-    display: flex;
-    align-items: center;
-}
-
-input {
-    width: 20rem;
-    margin-bottom: 1rem;
-    font-size: 2rem;
-    padding: 1rem 0.5rem;
-    border-radius: 0.5rem;
-    border: none;
     text-align: center;
 }
 
