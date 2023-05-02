@@ -24,28 +24,6 @@ body {
     background-color: var(--primary-bg-color);
 }
 
-#toggle-wrapper {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.toggle-icon {
-    background-color: var(--white-bg-color);
-    height: 5rem;
-    width: 5rem;
-    border-radius: 50%;
-    margin-top: 2.5rem;
-    margin-right: 2.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 3rem;
-    box-shadow: 0 0 1rem 0 #bbb;
-}
-
-.toggle-icon:hover {
-    cursor: pointer;
-}
 
 h1, h2 {
     margin-bottom: 4rem;
@@ -60,19 +38,48 @@ h2 {
     font-weight: 800;
 }
 
+/* wrapper */
+
 .wrapper {
     width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     max-width: 80rem;
-    margin: 0 auto;
+    margin: 2rem auto 0;
     padding: 2rem;
 }
 
 .wrapper > * {
     width: 100%;
 }
+
+/* toggle icon */
+
+#toggle-wrapper {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.toggle-icon {
+    background-color: var(--white-bg-color);
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    box-shadow: 0 0 1rem 0 #bbb;
+}
+
+.toggle-icon:hover {
+    cursor: pointer;
+}
+
+/* homepage text alignment */
 
 #homepage {
     text-align: center;
