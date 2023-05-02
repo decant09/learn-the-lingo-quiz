@@ -15,9 +15,26 @@ const toggleIcon = document.querySelector(".toggle-icon");
 
 toggleIcon.addEventListener('click', function() {
     document.body.classList.toggle('dark')
-    ? (toggleIcon.firstElementChild.className = 'far fa-moon')
-    : (toggleIcon.firstElementChild.className = 'far fa-sun');
+    var mode;
+    if(document.body.classList.contains('dark')){
+        toggleIcon.firstElementChild.className = 'far fa-moon';
+        mode = "DARK";
+    }else{
+        toggleIcon.firstElementChild.className = 'far fa-sun';
+        mode = "LIGHT";
+    }
+    localStorage.setItem('pageMode', JSON.stringify(mode));
+    
 });
+
+setInterval(function() {
+    let getMode = JSON.parse(localStorage.getItem('pageMode'));
+    if (getMode === 'DARK') {
+    document.body.classList = 'dark';
+    }else{
+    document.body.classList = '';
+    }
+}, 5)
 
 function startQuiz() {
     questionNumber = 0;
