@@ -100,7 +100,7 @@ let questionsArray = [
         answer1: 'A. Barry',
         answer2: 'B. Nick',
         answer3: 'C. Bonnie',
-        answer4: 'D. Graeme',
+        answer4: 'D. Andrew',
         correctAnswer: 4
     },
     {
@@ -144,7 +144,7 @@ let questionsArray = [
         correctAnswer: 2
     },
     {
-        question: 'Which of the following words is used to describe a feeling of unease',
+        question: 'Which of the following words is used to describe feeling queasy',
         answer1: 'A. Belter',
         answer2: 'B. Stoater',
         answer3: 'C. Braw',

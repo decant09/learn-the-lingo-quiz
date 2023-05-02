@@ -42,11 +42,12 @@ h2 {
 
 .wrapper {
     width: 100vw;
-    height: 100vh;
+    height: auto;
+    min-height: 50rem;
     display: flex;
     justify-content: center;
     max-width: 80rem;
-    margin: 2rem auto 0;
+    margin: 2rem auto;
     padding: 2rem;
 }
 
@@ -140,10 +141,11 @@ h2 {
 #quiz-container {
     display: flex;
     background-color: var(--white-bg-color);
-    padding: 1.5rem 4rem;
+    padding: 1.5rem 3rem;
     min-height: fit-content;
     border-radius: 1.5rem;
     box-shadow: 0 0 1rem 0 #bbb;
+    margin-bottom: 2rem;
 }
 
 #quiz {
@@ -226,4 +228,17 @@ body.dark {
     --white-bg-color: #272D3C;
     --primary-font-color: #fff;
     --seconday-font-color: #fff;
+}
+
+@media screen and (max-width: 525px) {
+    #quiz-container {
+        padding: 1.5rem;
+    }   
+    
+    .answer-wrapper {
+        height: 7.4rem;
+        padding: 0.5rem 1rem;
+        display: flex; 
+        align-items: center;
+    }
 }
