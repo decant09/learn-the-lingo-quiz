@@ -95,25 +95,58 @@ Wireframes were created for the website layout. The layout is the same across di
 ![](/docs/wireframes/quiz_over_page.png)
 
 ## Features
-- 
+- The website is made up of three pages, the home page, the quiz page and the quiz over page. The home page contains a start
+button which takes you to the quiz itself. When the quiz is complete the quiz over page is automatically opened. This page contains
+buttons to navigate back to the home page or to the quiz page again.
 ### Home Page  
+- The home page displays the title of the website clearly.
+- Below this there is a brief introduction to the website and an invaitation to take the quiz.
+- Below the introduction there is a button labelled "start" which when clicked takes you the quiz page.
+-The button is styled with a box shadow to make it stand out as a button. There is a hover effect applied that changes the cursor
+to a pointer and makes the button pop up a fraction. This gives the appearance of it moving in a 3D direction out of the screen.
+- There is dark mode toggle icon to allow the user to change between the default light mode to dark mode. This is displayed on each
+of the pages of the website.
 ### Quiz Page
-- There is score display area located in the quiz head to the top right of the quiz. It increments by 20 as questions are
-    answered correctly.
-- There is a question counter area located in the quiz head to the top left of the quiz. It given an integer value of between
-    1 and 5, depending on what question number you are at. This number is displayed beside a forward slash and the number 5. This is
-    is to show the user that there are 5 questions in total and how far they have progressed.
-- Once an answer option is clicked on the background colour changes to green, if the answer selected is correct, and red if
-incorrect.
+- The quiz page is made up of a quiz area with a shadow effect border applied.
+- Within this area there are three main components, the quiz head, the question display, and the associated answers options.
+- The quiz head, located at the top, contains a question count to the left and a score count to the right.
+- The question counter contains two numbers separated by a forward slash. These are placed under the heading labelled "question".
+The first number is a number between 1 and 5, and is assigned depending on what question number point the user is at in the quiz.
+The second number is 5 and corresponds to the total amount of questions in the quiz. This shows the user that there are 5 questions
+in total and how far they have progressed. When the page is loaded the question counter displays 1/5.
+- The score counter is placed under the heading labelled "score". It starts at 0 and increments by 20 as questions are answered
+correctly.
+- The question area displays the new question each time it is prompted to, this being when the page is loaded and when an answer
+option has been clicked.
+- Each question has its associated answers displayed below it. There are 4 possible answer choices of which only one is right. A
+hover effect is applied to the areas containing the answers. The results in the cursor changing to a pointer and the colour scheme
+of the area changing.
+- Once an answer option is chosen and clicked on the background colour changes to green, if the answer selected is correct, and red if
+incorrect. There is a brief delay applied before the next question is automatically displayed.
+- The quiz is complete once 5 questions have been answered prompting the quiz over page to be displayed. 
 ### Quiz Over Page
+- This page shows the users score result with a message displayed beneath.
+- The message displayed depends on the score achieved.
+- There are two buttons displayed underneath and are stacked on top on each other. They have the same styling and hover effect
+aplied to them as the start button on the home page.
+- The first button is labelled "try again" which when clicked taks tou the start of the quiz again.
+- The second button is labelled "home" and when clicked takes you to the home page.
 ### Dark Mode Toggle
-- Font awesome icons for a sun and a moon are used to denote bright mode or dark mode. The icon changes from one to the other
-depending on what mode you are currently viewing the page on. The sun is used on the bright mode page and the moon on the dark mode
-page. There is a circular dark mode toggle icon located in the top right corner of each page of the website. The user can toggle
-between dark and light mode depending on preference.
-
+- The dark mode toggle is featured on each of the pages of the website in the same position on each, that is to the top right corner.
+- Its appearance is a font awesome icon, a sun or a moon, surrounded by a circle.
+- It is a clickable area which when clicked toggles the appearance of the website between the dark and light mode styles.
+- A sun icon is shown when the website is in light mode and the moon icon when in dark mode. The icon changes from one to the other
+depending on what mode you are currently viewing the page on.
+- The user can toggle between dark and light mode depending on their preference. This preference choice is maintained throughout the
+website regardless of whether or not a new page is visited.
 ### Future Features
-
+- The website is based on the Scottish linguistic variation of English, as well as its own regional dialects. However, on a similar
+basis, I would like to include England and Ireland specific quizes.
+- The structure would be the same but instead the homepage would be modified to add buttons that would allow the user to choose the
+England, Ireland or Scotland quiz option.
+- At the outset of creating this website I intended to have a leaderboard feature which would display the top three scores achieved
+by users. However. time contraints meant that I had to remove this feature from the website as it not fully complete by the time
+of submission.
 ##  Technologies Used
 ### Languages
 - HTML5
