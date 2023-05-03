@@ -81,16 +81,31 @@ to have some fun, or to help people improve their understanding of the local lin
 - I want a leaderboard so I can see how well I have performed (furture implementation).
 ### Design
 #### Colour Scheme
+- Light Mode Palette  
 I opted for a neutral color scheme throughout the website mainly using grays, whites and blacks. I used a bright gray colour, #EDEAF0,
 for backgrounds, and an off black colour for the font, #0F0916. Other shades of gray were used for shadowing to implement a 3D effect
 around buttons and borders.  
 The main pop of colour is the purple colour, #4C2F6C, used for the background of the answer areas. I chose a purple colour as this is
 a colour representative of Scotland. The national emblem of Scotland is the purple thistle.  
-Once this purple colour was chosen I used a colour palette website called [color-name](https://www.color-name.com/hex/4C2F6C).
-![](/docs/colour_palette/color_name_palette.png)
+Once this purple colour was chosen I used a colour palette website called [color-name](https://www.color-name.com/hex/4C2F6C). I used
+the colur palettes generated from the purple colour to inform the other colour choices.  
+![](/docs/colour_palette/color_name_palette.png)  
+- Dark Mode Palette  
+Compiling the dark mode palette involved only swapping some of the main colours of the light mode palette around. An additional dark
+gray colour, #272D3C, was chosen by using the light mode font colour, #0F0916, to generate a matching gradient palette usin
+[ColorSpace](https://mycolor.space/?hex=%230F0916&sub=1).  
+![](/docs/colour_palette/colorspace.png)  
+- Correct/Incorrect Answer Palette  
+The standard green colour was chosen to indicate a correct answer and the standard red colour was chosen to indicate an incorrect
+answer.  
 
 #### Typography
-Poppins
+I chose a simple Poppins sans serif font family throughout for the text.  
+The font is used on a GeekProbin [YouTube](https://www.youtube.com/watch?v=-cX5jnQgqSM) quiz app tutorial and I decided to
+use it as I found it to be geometrically attactive.  
+I wanted a simple font where readability was a strong characteristic. I referenced a blog on
+[Pepper Square](https://www.peppersquare.com/blog/10-best-google-fonts-for-your-website/#:~:text=Source%20Sans%20Pro-,5.,in%20text%20or%20display%20contexts.)
+to confirm the choice.  
 
 #### Wireframes
 Wireframes were created for the website layout. The layout is the same across different device screen sizes.
