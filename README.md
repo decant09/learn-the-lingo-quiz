@@ -81,11 +81,11 @@ Poppins
 #### Wireframes
 Wireframes were created for the website layout. The layout is the same across different device screen sizes.
 - Home Page  
-<!-- ![](/docs/wireframes/wireframe-homepage.png)   -->
+![](/docs/wireframes/home_page.png)
 - Quiz Page  
-    <!-- ![](/docs/wireframes/wireframe-contact.png)   -->
+![](/docs/wireframes/quiz_page.png)
 - Quiz Over Page  
-<!-- ![](/docs/wireframes/wireframe-thank-you.png)   -->
+![](/docs/wireframes/quiz_over_page.png)
 
 ## Features
 ### Home Page  
@@ -226,7 +226,7 @@ The steps below describe how to fork or clone the repository if desired.
 
 ## Credits
 ### Code Used
-- Used the code from the [Love Running](https://github.com/decant09/love-running) website to develop the footer element. 
+- 
 
 ### Browser Icon
 - Obtained the browser icon using [favicon](https://www.favicon.cc/?action=icon&file_id=823471).
