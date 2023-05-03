@@ -79,18 +79,13 @@ I chose a linguistics based quiz as I have an interest in liguistics. Although o
 Poppins
 
 #### Wireframes
-Wireframes were created for desktop as the website layout is the same across different device screen sizes. The one exception is the contact page, where the form and map areas are repositioned above and below each other on screen sizes of 800px and lower. A wireframe is provided to show this layout.  
+Wireframes were created for the website layout. The layout is the same across different device screen sizes.
 - Home Page  
-![](/docs/wireframes/wireframe-homepage.png)  
-- Schedule Page  
-![](/docs/wireframes/wireframe-schedule.png)  
-- Contact Page
-    - Desktop  
-    ![](/docs/wireframes/wireframe-contact.png)  
-    - Screen Sizes below 800px  
-    ![](/docs/wireframes/wireframe-contact-small-screen.png)  
-- Thank You Page  
-![](/docs/wireframes/wireframe-thank-you.png)  
+<!-- ![](/docs/wireframes/wireframe-homepage.png)   -->
+- Quiz Page  
+    <!-- ![](/docs/wireframes/wireframe-contact.png)   -->
+- Quiz Over Page  
+<!-- ![](/docs/wireframes/wireframe-thank-you.png)   -->
 
 ## Features
 ### Home Page  
@@ -121,7 +116,8 @@ Wireframes were created for desktop as the website layout is the same across dif
     - Used to compress image files down to smaller sizes before uploading to the website.
 - Google Dev Tools
     - Used for responsiveness investigations, isolating code, troubleshooting, and testing features.
-<!-- - [Am I Responsive](https://ui.dev/amiresponsive?url=https://decant09.github.io/beach-yoga-fuerteventura/) -->
+- [Am I Responsive]
+<!-- (https://ui.dev/amiresponsive?url=https://decant09.github.io/beach-yoga-fuerteventura/) -->
     - Used to show responsiveness across different device sizes.
 
 ## Testing
