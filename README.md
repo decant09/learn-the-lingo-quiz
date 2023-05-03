@@ -3,7 +3,7 @@ Learn the Lingo Quiz is a quiz based learning modality for users to test their k
 game whereby you are presented with a phrase or term with four possible answers to choose from. It is aimed at people who are
 interested in the fun of linguistics and want to learn the local lingo.
 
-<!-- ![](/docs/testing/am-i-responsive.png) -->
+![](/docs/testing/am_i_responsive.png)
 
 To visit the live link to Learn the Lingo on GitHub pages click [here](https://decant09.github.io/learn-the-lingo-quiz/).  
 
@@ -81,6 +81,13 @@ to have some fun, or to help people improve their understanding of the local lin
 - I want a leaderboard so I can see how well I have performed (furture implementation).
 ### Design
 #### Colour Scheme
+I opted for a neutral color scheme throughout the website mainly using grays, whites and blacks. I used a bright gray colour, #EDEAF0,
+for backgrounds, and an off black colour for the font, #0F0916. Other shades of gray were used for shadowing to implement a 3D effect
+around buttons and borders.  
+The main pop of colour is the purple colour, #4C2F6C, used for the background of the answer areas. I chose a purple colour as this is
+a colour representative of Scotland. The national emblem of Scotland is the purple thistle.  
+Once this purple colour was chosen I used a colour palette website called [color-name](https://www.color-name.com/hex/4C2F6C).
+![](/docs/colour_palette/color_name_palette.png)
 
 #### Typography
 Poppins
