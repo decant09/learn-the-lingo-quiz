@@ -94,4 +94,7 @@ increaseScore = function(num) {
     scoreTotalValue.innerText = scoreTotal;
 };
 
-startQuiz();
+// startQuiz();
+if (typeof questionsArray !== 'undefined') {
+    startQuiz();
+}

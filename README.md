@@ -110,11 +110,11 @@ to confirm the choice.
 #### Wireframes
 Wireframes were created for the website layout. The layout is the same across different device screen sizes.
 - Home Page  
-![](/docs/wireframes/home_page.png)
+![](/docs/wireframes/wireframe_home_page.png)
 - Quiz Page  
-![](/docs/wireframes/quiz_page.png)
+![](/docs/wireframes/wireframe_quiz_page.png)
 - Quiz Over Page  
-![](/docs/wireframes/quiz_over_page.png)
+![](/docs/wireframes/wireframe_quiz_over_page.png)
 
 ## Features
 - The website is made up of three pages, the home page, the quiz page and the quiz over page. The home page contains a start
@@ -294,6 +294,10 @@ a new page is opened.
 created. The size of the container would increase causing some containers to be double the size of the others displayed. I made each
 container be of a larger size and aligned the text centrally. This maintains uniformity and also has the benefit of each of the
 containers being larger which improves user experience on small screens.  
+- An "Uncaught ReferenceError: questionsArray is not defined" message was logging in the console on the home page and on the quiz over
+page. This was because the questionsArray is located in the questions.js file, which is not linked on these two pages. So when the
+startQuiz function was being called, it then couldn't find the questionsArray. I resolved this by adding a "typeof" line of code.
+This instructs the startQuiz funtion to run if the questionsArray is not undefined, that is, if it is defined, then run.  
 
 ## Deployment & Local Development
 ### Deployment
