@@ -77,7 +77,7 @@ to have some fun, or to help people improve their understanding of the local lin
 - I want to be presented with different questions each time I play.
 - I want an option to be able to play again.
 #### Frequent Visitor Goals
-- I want a leaderboard so I can see how well I have performed (furture implementation).
+- I want a leaderboard so I can see how well I have performed (future implementation).
 - I want a number of quiz options.
 ### Design
 #### Colour Scheme
@@ -88,11 +88,11 @@ around buttons and borders.
 The main pop of colour is the purple colour, #4C2F6C, used for the background of the answer areas. I chose a purple colour as this is
 a colour representative of Scotland. The national emblem of Scotland is the purple thistle.  
 Once this purple colour was chosen I used a colour palette website called [color-name](https://www.color-name.com/hex/4C2F6C). I used
-the colur palettes generated from the purple colour to inform the other colour choices.  
+the colour palettes generated from the purple colour to inform the other colour choices.  
 ![](/docs/colour_palette/color_name_palette.png)  
 - Dark Mode Palette  
 Compiling the dark mode palette involved only swapping some of the main colours of the light mode palette around. An additional dark
-gray colour, #272D3C, was chosen by using the light mode font colour, #0F0916, to generate a matching gradient palette usin
+gray colour, #272D3C, was chosen by using the light mode font colour, #0F0916, to generate a matching gradient palette using
 [ColorSpace](https://mycolor.space/?hex=%230F0916&sub=1).  
 ![](/docs/colour_palette/colorspace.png)  
 - Correct/Incorrect Answer Palette  
@@ -102,7 +102,7 @@ answer.
 #### Typography
 I chose a simple Poppins sans serif font family throughout for the text.  
 The font is used on a GeekProbin [YouTube](https://www.youtube.com/watch?v=-cX5jnQgqSM) quiz app tutorial and I decided to
-use it as I found it to be geometrically attactive.  
+use it as I found it to be geometrically attractive.  
 I wanted a simple font where readability was a strong characteristic. I referenced a blog on
 [Pepper Square](https://www.peppersquare.com/blog/10-best-google-fonts-for-your-website/#:~:text=Source%20Sans%20Pro-,5.,in%20text%20or%20display%20contexts.)
 to confirm the choice.  
@@ -122,7 +122,7 @@ button which takes you to the quiz itself. When the quiz is complete the quiz ov
 buttons to navigate back to the home page or to the quiz page again.
 ### Home Page  
 - The home page displays the title of the website clearly.
-- Below this there is a brief introduction to the website and an invaitation to take the quiz.
+- Below this there is a brief introduction to the website and an invitation to take the quiz.
 - Below the introduction there is a button labelled "start" which when clicked takes you the quiz page.
 -The button is styled with a box shadow to make it stand out as a button. There is a hover effect applied that changes the cursor
 to a pointer and makes the button pop up a fraction. This gives the appearance of it moving in a 3D direction out of the screen.
@@ -156,9 +156,9 @@ incorrect. There is a brief delay applied before the next question is automatica
 - This page shows the users score result with a message displayed beneath.
 - The message displayed depends on the score achieved. There are three possible messages, one for achieving a result of 100/100, one
 for over 50/100 but less than 100, and finally one for all other results, in other words results less than 50/100.
-- There are two buttons displayed underneath stacked on top on each other. They have the same styling and hover effect aplied to
+- There are two buttons displayed underneath stacked on top on each other. They have the same styling and hover effect applied to
 them as the start button on the home page.
-- The first button is labelled "try again" which when clicked taks tou the start of the quiz again.
+- The first button is labelled "try again" which when clicked takes you to the start of the quiz again.
 - The second button is labelled "home" and when clicked takes you to the home page.  
 ![](/docs/website_screenshots/quiz_over_page_100_msg.png)  
 ![](/docs/website_screenshots/quiz_over_page_o50_msg.png)  
@@ -177,11 +177,11 @@ website regardless of whether or not a new page is visited.
 ![](/docs/website_screenshots/quiz_over_page_dark_mode.png)  
 ### Future Features
 - The website is based on the Scottish linguistic variation of English, as well as its own regional dialects. However, on a similar
-basis, I would like to include England and Ireland specific quizes.
+basis, I would like to include England and Ireland specific quizzes.
 - The structure would be the same but instead the homepage would be modified to add buttons that would allow the user to choose the
 England, Ireland or Scotland quiz option.
 - At the outset of creating this website I intended to have a leaderboard feature which would display the top three scores achieved
-by users. However. time contraints meant that I had to remove this feature from the website as it not fully complete by the time
+by users. However. time constraints meant that I had to remove this feature from the website as it not fully complete by the time
 of submission.
 ##  Technologies Used
 ### Languages
@@ -256,7 +256,7 @@ of submission.
     ![](/docs/testing/webaim_wht_dgr.png)  
 
 #### Google Lighthouse
-Google lighthouse was used to test for accessibilty for each page.
+Google lighthouse was used to test for accessibility for each page.
 - Home Page
     - Result - 100  
     ![](/docs/testing/home_page_lighthouse.png)  
@@ -277,7 +277,8 @@ them the desired effect is realised. The main buttons redirect appropriately to 
 fields behave as intended.
 - The dark mode toggle icon changes appearance upon clicking. The dark mode colour scheme is maintained throughout the website when
 a new page is opened.
-- I spellchecked the website by copying the text content to [Online Spellcheck](https://www.online-spellcheck.com/).
+- I spellchecked the website and the readme using [Online Spellcheck](https://www.online-spellcheck.com/). I also used
+[Webpage Spell-Check](https://chrome.google.com/webstore/detail/webpage-spell-check/mgdhaoimpabdhmacaclbbjddhngchjik), a google chrome extension.
 
 ### Testing User Stories from User Experience (UX) Section
 #### First Time Visitor Goals
@@ -341,7 +342,7 @@ after clicking on them. This resulted in these class effects only being visible 
 background areas did not turn green or red if the cursor remained over the area. Instead the area displayed the hover effect of a
 grey background. I added a hover function to these classes to alleviate the issue.
 - The content from the quiz area was overflowing onto the dark mode toggle area. This was resolved by adding a wrapper div to
-the toggle-icon div. Then setting and changing the flex alignment of the wrapper div, below the toggle wrapper, to flex-start as opposed to centre. This means the top of the quiz area remains constant, just below the toggle area, even though the quiz area grows
+the toggle-icon div. Then setting and changing the flex alignment of the wrapper div, below the toggle wrapper, to flex-start as opposed to center. This means the top of the quiz area remains constant, just below the toggle area, even though the quiz area grows
 or shrinks depending on its content.
 - The answer field containers were of uneven size on smaller screens. Where answer fields had longer text, two lines of text were
 created. The size of the container would increase causing some containers to be double the size of the others displayed. I made each
@@ -350,7 +351,7 @@ containers being larger, which improves user experience on small screens.
 - An "Uncaught ReferenceError: questionsArray is not defined" message was logging in the console on the home page and on the quiz over
 page. This was because the questionsArray is located in the questions.js file, which is not linked on these two pages. So when the
 startQuiz function was being called, it then couldn't find the questionsArray. I resolved this by adding a "typeof" line of code.
-This instructs the startQuiz funtion to run if the questionsArray is not undefined, that is, if it is defined, then run.
+This instructs the startQuiz function to run if the questionsArray is not undefined, that is, if it is defined, then run.
 - The answer containers, once selected, would shrink a little and cause the whole page contents to shift. This was due to
 there not being a solid border applied to the correct and incorrect class styling. I applied a border of 0.25rem solid to resolve
 this.
@@ -381,7 +382,7 @@ The steps below describe how to fork or clone the repository if desired.
 1. Log in to GitHub.
 2. Navigate to the [repository](https://github.com/decant09/learn-the-lingo-quiz) for this website.
 3. Click on the Code button and a modal will appear.
-4. Within this modal selcet the local tab.
+4. Within this modal select the local tab.
 5. Within this tab there is HTTPS, SSH or GitHub CLI tab.
 6. Click on the HTTPS tab and copy the link shown.
 7. In your development environment open the terminal.
@@ -401,7 +402,7 @@ The steps below describe how to fork or clone the repository if desired.
     - Dark Mode JavaScript toggle using localStorage even on reload by [codewj](https://www.youtube.com/watch?v=-Jt_h91uXkQ).
 
 ### Resources
-- For tips relating to root font rize and how to override to create a better user experience on
+- For tips relating to root font size and how to override to create a better user experience on
 [freecodecamp](https://www.freecodecamp.org/news/override-root-font-size-for-a-better-user-experience/).
 - Referred to the GeekProbin [YouTube](https://www.youtube.com/watch?v=-cX5jnQgqSM) tutorial for CSS styling.
 - [CSS Tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/#prop-align-items),
