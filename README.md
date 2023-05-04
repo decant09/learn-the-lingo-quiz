@@ -320,7 +320,10 @@ a new page is opened.
     will be met with the future implementation plans mentioned there.
 ### Bugs
 #### Known
-
+- On mobile touch screen when an answer option is selected it changes colour correctly to green or red depending on whether or not
+the answer is right or wrong. However, when the next question and answers are displayed, the answer container that was selected on
+the previous question maintains a hover effect, that is, its background is light gray instead of purple like the other three answer
+containers.
 #### Solved
 - The answer field containers were of uneven size on smaller screens. Where answer fields had longer text, two lines of text were
 created. The size of the container would increase causing some containers to be double the size of the others displayed. I made each
@@ -329,7 +332,10 @@ containers being larger which improves user experience on small screens.
 - An "Uncaught ReferenceError: questionsArray is not defined" message was logging in the console on the home page and on the quiz over
 page. This was because the questionsArray is located in the questions.js file, which is not linked on these two pages. So when the
 startQuiz function was being called, it then couldn't find the questionsArray. I resolved this by adding a "typeof" line of code.
-This instructs the startQuiz funtion to run if the questionsArray is not undefined, that is, if it is defined, then run.  
+This instructs the startQuiz funtion to run if the questionsArray is not undefined, that is, if it is defined, then run.
+- The answer containers, once selected, would shrink a little and cause the whole page contents to shift. This was due to
+there not being a solid border applied to the correct and incorrect class styling. I applied a border of 0.25rem solid and this
+resolved the issue.
 
 ## Deployment & Local Development
 ### Deployment

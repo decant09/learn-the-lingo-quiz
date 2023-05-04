@@ -180,23 +180,23 @@ h2 {
 
 .correct {
     background-color: green;
-    border: green;
+    border: 0.25rem solid green;
 }
 
 .correct:hover {
     background-color: green;
-    border: green;
+    border: 0.25rem solid green;
     color: #fff;
 }
 
 .incorrect {
     background-color: red;
-    border: red;
+    border: 0.25rem solid red;
 }
 
 .incorrect:hover {
     background-color: red;
-    border: red;
+    border: 0.25rem solid red;
     color: #fff;
 }
 
