@@ -51,7 +51,6 @@ To visit the live link to Learn the Lingo on GitHub pages click [here](https://d
         - [How to Clone](#how-to-clone)
 - [Credits](#credits)
     - [Code Used](#code-used)
-    - [Browser Icon](#browser-icon)
     - [Resources](#resources)
     - [Acknowledgements](#acknowledgements)
 ## User Experience
@@ -201,13 +200,12 @@ of submission.
     - Used for the dark mode toggle sun and moon icons.
 - [CDNJS](https://cdnjs.com/libraries/font-awesome)
     - Used this open source CDN to create the link for the font awesome icons.
-- [Tinypng](https://tinypng.com/)
-    - Used to compress image files down to smaller sizes before uploading to the website.
 - Google Dev Tools
     - Used for responsiveness investigations, isolating code, troubleshooting, and testing features.
-- [Am I Responsive]
-<!-- (https://ui.dev/amiresponsive?url=https://decant09.github.io/beach-yoga-fuerteventura/) -->
+- [Am I Responsive](https://ui.dev/amiresponsive?url=https://decant09.github.io/learn-the-lingo-quiz/)
     - Used to show responsiveness across different device sizes.
+- [Favicon](https://www.favicon.cc/?action=icon&file_id=823471).
+    - Used to obtain the browser icon to be displayed in the browser tab. 
 
 ## Testing
 
@@ -349,10 +347,7 @@ The steps below describe how to fork or clone the repository if desired.
 
 ## Credits
 ### Code Used
-- 
-
-### Browser Icon
-- Obtained the browser icon using [favicon](https://www.favicon.cc/?action=icon&file_id=823471).
+-  
 
 ### Resources
 
