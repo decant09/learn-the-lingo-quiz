@@ -1,6 +1,6 @@
 # Learn the Lingo Quiz
-Learn the Lingo Quiz is a quiz based learning modality for users to test their knowledge of the local tongue. It is quiz based
-game whereby you are presented with a phrase or term with four possible answers to choose from. It is aimed at people who are
+Learn the Lingo Quiz is a quiz based learning modality for users to test their knowledge of the local tongue. It is a quiz based
+game whereby you are presented with a phrase, or term, with four possible answers to choose from. It is aimed at people who are
 interested in the fun of linguistics and want to learn the local lingo.
 
 ![](/docs/testing/am_i_responsive.png)
@@ -56,13 +56,12 @@ To visit the live link to Learn the Lingo on GitHub pages click [here](https://d
 ## User Experience
 
 ### Initial Discussion
-This website is created for a project submission for the Diploma in Full Stack Software Development (E-commerce Applications) at
-Code Institute. The criteria for the submission were primarily that it be created using the HTML, CSS and JavaScript coding
-languages. We were presented with a few website formats to choose from, of which I chose a quiz based game format.  
-I chose a linguistics based quiz as I have an interest in liguistics. Although one language may be the common first language in
-many countries, there local variations and uses of this same language between and within each country. Some people may find this
-challenging to encounter but I find it particularly interesting and fun. The aim was to develop a quiz that will either help people
-to have some fun, or to help people improve their understanding of the local lingo.  
+This website was created for a project submission to Code Institute for the Diploma in Full Stack Software Development
+(E-commerce Applications). The criteria for the submission were primarily that it be created using HTML, CSS, and JavaScript coding
+languages. We were presented with a few website formats to choose from and of these I chose the quiz based game format.  
+I chose a linguistics based quiz as I have an interest in linguistics. Although one language may be the common first language in
+many countries, there are many local variations and uses of this same language between and within each country. Some people may
+find this challenging to encounter but I find it particularly interesting and fun. The aim was to develop a quiz that will either help people to have some fun or help to improve their understanding of the local lingo.  
 
 ### User Stories
 #### First Time Visitor Goals
@@ -82,9 +81,9 @@ to have some fun, or to help people improve their understanding of the local lin
 ### Design
 #### Colour Scheme
 - Light Mode Palette  
-I opted for a neutral color scheme throughout the website mainly using grays, whites and blacks. I used a bright gray colour, #EDEAF0,
-for backgrounds, and an off black colour for the font, #0F0916. Other shades of gray were used for shadowing to implement a 3D effect
-around buttons and borders.  
+I opted for a neutral colour scheme throughout the website mainly using greys, whites, and blacks. I used a bright grey colour,
+#EDEAF0, for the backgrounds, and an off-black colour, #0F0916, for the font. Other shades of grey were used for shadowing to
+implement a 3D effect around buttons and borders.  
 The main pop of colour is the purple colour, #4C2F6C, used for the background of the answer areas. I chose a purple colour as this is
 a colour representative of Scotland. The national emblem of Scotland is the purple thistle.  
 Once this purple colour was chosen I used a colour palette website called [color-name](https://www.color-name.com/hex/4C2F6C). I used
@@ -92,7 +91,7 @@ the colour palettes generated from the purple colour to inform the other colour 
 ![](/docs/colour_palette/color_name_palette.png)  
 - Dark Mode Palette  
 Compiling the dark mode palette involved only swapping some of the main colours of the light mode palette around. An additional dark
-gray colour, #272D3C, was chosen by using the light mode font colour, #0F0916, to generate a matching gradient palette using
+grey colour, #272D3C, was chosen by using the light mode font colour, #0F0916, to generate a matching gradient palette using
 [ColorSpace](https://mycolor.space/?hex=%230F0916&sub=1).  
 ![](/docs/colour_palette/colorspace.png)  
 - Correct/Incorrect Answer Palette  
@@ -117,24 +116,24 @@ Wireframes were created for the website layout. The layout is the same across di
 ![](/docs/wireframes/wireframe_quiz_over_page.png)
 
 ## Features
-- The website is made up of three pages, the home page, the quiz page and the quiz over page. The home page contains a start
-button which takes you to the quiz itself. When the quiz is complete the quiz over page is automatically opened. This page contains
+- The website is made up of three pages, the home page, the quiz page, and the quiz over page. The home page contains a start
+button that takes you to the quiz itself. When the quiz is complete, the quiz over page is automatically opened. This page contains
 buttons to navigate back to the home page or to the quiz page again.
 ### Home Page  
 - The home page displays the title of the website clearly.
-- Below this there is a brief introduction to the website and an invitation to take the quiz.
-- Below the introduction there is a button labelled "start" which when clicked takes you the quiz page.
+- Below this, there is a brief introduction to the website and an invitation to take the quiz.
+- Below the introduction, there is a button labelled "start" that when clicked takes you to the quiz page.
 -The button is styled with a box shadow to make it stand out as a button. There is a hover effect applied that changes the cursor
 to a pointer and makes the button pop up a fraction. This gives the appearance of it moving in a 3D direction out of the screen.
-- There is dark mode toggle icon to allow the user to change between the default light mode to dark mode. This is displayed on each
+- There is a dark mode toggle icon to allow the user to change between the default light mode to dark mode. This is displayed on each
 of the pages of the website.  
 ![](/docs/website_screenshots/home_page.png)  
 ### Quiz Page
 - The quiz page is made up of a quiz area with a shadow effect border applied.
-- Within this area there are three main components, the quiz head, the question display, and the associated answers options.
+- Within this area, there are three main components, the quiz head, the question display, and the associated answers options.
 - The quiz head, located at the top, contains a question count to the left and a score count to the right.
 - The question counter contains two numbers separated by a forward slash. These are placed under the heading labelled "question".
-The first number is a number between 1 and 5, and is assigned depending on what question number point the user is at in the quiz.
+The first number is a number between 1 and 5 and is assigned depending on what question number point the user is at in the quiz.
 The second number is 5 and corresponds to the total amount of questions in the quiz. This shows the user that there are 5 questions
 in total and how far they have progressed. When the page is loaded the question counter displays 1/5.
 - The score counter is placed under the heading labelled "score". It starts at 0 and increments by 20 as questions are answered
@@ -143,46 +142,47 @@ correctly.
 option has been clicked.  
 ![](/docs/website_screenshots/quiz_page.png)  
 - Each question has its associated answers displayed below it. There are 4 possible answer choices of which only one is right. A
-hover effect is applied to the areas containing the answers. The results in the cursor changing to a pointer and the colour scheme
+hover effect is applied to the areas containing the answers. This results in the cursor changing to a pointer and the colour scheme
 of the area changing.  
 ![](/docs/website_screenshots/quiz_page_hover.png)  
-- Once an answer option is chosen and clicked on the background colour changes to green, if the answer selected is correct, and red if
+- Once an answer option is chosen and clicked on the background colour changes to green if the answer selected is correct, and red if
 incorrect. There is a brief delay applied before the next question is automatically displayed.  
 ![](/docs/website_screenshots/quiz_page_green.png)  
 ![](/docs/website_screenshots/quiz_page_red.png)  
 - The quiz is complete once 5 questions have been answered prompting the quiz over page to be displayed.  
 
 ### Quiz Over Page
-- This page shows the users score result with a message displayed beneath.
+- This page shows the user's score result with a message displayed beneath.
 - The message displayed depends on the score achieved. There are three possible messages, one for achieving a result of 100/100, one
 for over 50/100 but less than 100, and finally one for all other results, in other words results less than 50/100.
-- There are two buttons displayed underneath stacked on top on each other. They have the same styling and hover effect applied to
+- There are two buttons displayed underneath stacked on top of each other. They have the same styling and hover effect applied to
 them as the start button on the home page.
-- The first button is labelled "try again" which when clicked takes you to the start of the quiz again.
+- The first button is labelled "try again" and when clicked takes you to the start of the quiz again.
 - The second button is labelled "home" and when clicked takes you to the home page.  
 ![](/docs/website_screenshots/quiz_over_page_100_msg.png)  
 ![](/docs/website_screenshots/quiz_over_page_o50_msg.png)  
 ![](/docs/website_screenshots/quiz_over_page_u50_msg.png)  
 ### Dark Mode Toggle
-- The dark mode toggle is featured on each of the pages of the website in the same position on each, that is to the top right corner.  
+- The dark mode toggle is featured on each of the pages of the website in the same position on each, which is in the top right
+corner.  
 ![](/docs/website_screenshots/dark_mode_toggle.png)  
 - Its appearance is a font awesome icon, a sun or a moon, surrounded by a circle.
-- It is a clickable area which when clicked toggles the appearance of the website between the dark and light mode styles.
+- It is a clickable area that when clicked toggles the appearance of the website between the dark and light mode styles.
 - A sun icon is shown when the website is in light mode and the moon icon when in dark mode. The icon changes from one to the other
-depending on what mode you are currently viewing the page on.
-- The user can toggle between dark and light mode depending on their preference. This preference choice is maintained throughout the
+depending on what mode you are currently viewing the page.
+- The user can toggle between dark and light modes depending on their preference. This preference choice is maintained throughout the
 website regardless of whether or not a new page is visited.  
 ![](/docs/website_screenshots/home_page_dark_mode.png)  
 ![](/docs/website_screenshots/quiz_page_dark_mode.png)  
 ![](/docs/website_screenshots/quiz_over_page_dark_mode.png)  
 ### Future Features
-- The website is based on the Scottish linguistic variation of English, as well as its own regional dialects. However, on a similar
+- The website is based on the Scottish linguistic variation of English, as well as its regional dialects. However, on a similar
 basis, I would like to include England and Ireland specific quizzes.
-- The structure would be the same but instead the homepage would be modified to add buttons that would allow the user to choose the
-England, Ireland or Scotland quiz option.
-- At the outset of creating this website I intended to have a leaderboard feature which would display the top three scores achieved
-by users. However. time constraints meant that I had to remove this feature from the website as it not fully complete by the time
-of submission.
+- The structure would be the same, but instead, the homepage would be modified to add buttons that would allow the user to choose the
+England, Ireland, or Scotland quiz option.
+- At the outset of creating this website I intended to have a leaderboard feature that would display the top three scores achieved
+by users. However, time constraints meant that I had to remove this feature from the website as it was not fully complete by the
+time of submission.
 ##  Technologies Used
 ### Languages
 - HTML5
@@ -242,21 +242,21 @@ of submission.
 ### Accessibility
 #### WebAIM
 - I tested the contrast of the font colours used against their respective background colours using WebAIM.
-- Black text on light gray background
+- Black text on light grey background
     - [Result](https://webaim.org/resources/contrastchecker/?fcolor=0F0916&bcolor=EDEAF0) - 16.46:1 - Pass.  
     ![](/docs/testing/webaim_blk_lgr.png)  
 - White text on purple background
     - [Result](https://webaim.org/resources/contrastchecker/?fcolor=FFFFFF&bcolor=4C2F6C) - 10.87:1 - Pass.  
     ![](/docs/testing/webaim_wht_prp.png)  
-- Purple text on light gray background
+- Purple text on light grey background
     - [Result](https://webaim.org/resources/contrastchecker/?fcolor=4C2F6C&bcolor=EDEAF0) - 9.13:1 - Pass.  
     ![](/docs/testing/webaim_prp_lgr.png)  
-- White text on dark gray background
+- White text on dark grey background
     - [Result](https://webaim.org/resources/contrastchecker/?fcolor=FFFFFF&bcolor=272D3C) - 13.75:1 - Pass.  
     ![](/docs/testing/webaim_wht_dgr.png)  
 
 #### Google Lighthouse
-Google lighthouse was used to test for accessibility for each page.
+Google Lighthouse was used to test for accessibility for each page.
 - Home Page
     - Result - 100  
     ![](/docs/testing/home_page_lighthouse.png)  
@@ -271,14 +271,15 @@ Google lighthouse was used to test for accessibility for each page.
 - I used Google Dev Tools to test for screen responsiveness.  
 ![](/docs/website_screenshots/mobile_responsive.png)  
 - I tested on different browsers (chrome, firefox, safari & edge) to ensure the website performs as expected across all of these.
-- I tested on android and iPhone devices.
-- I tested all the buttons and answers fields on the website manually to ensure that they all work as expected. Upon hovering over
+- I tested on Android and iPhone devices.
+- I tested all the buttons and answer fields on the website manually to ensure that they all work as expected. Upon hovering over
 them the desired effect is realised. The main buttons redirect appropriately to the website areas they are linked to. The answer
 fields behave as intended.
 - The dark mode toggle icon changes appearance upon clicking. The dark mode colour scheme is maintained throughout the website when
 a new page is opened.
 - I spellchecked the website and the readme using [Online Spellcheck](https://www.online-spellcheck.com/). I also used
 [Webpage Spell-Check](https://chrome.google.com/webstore/detail/webpage-spell-check/mgdhaoimpabdhmacaclbbjddhngchjik), a google chrome extension.
+- I used [Grammarly](https://www.grammarly.com/) to check for grammatical errors.
 
 ### Testing User Stories from User Experience (UX) Section
 #### First Time Visitor Goals
@@ -294,7 +295,7 @@ a new page is opened.
     - The website is responsive to the device screen size it is being viewed on by using a simple design and a media query
     where required (see image above in [manual testing](#manual)).  
 - I want to see a score count as I play and my score result on completing the quiz.
-    - There is score display area located in the quiz head to the top right of the quiz. Once the user completes the quiz they
+    - There is a score display area located in the quiz head to the top right of the quiz. Once the user completes the quiz they
     are presented with their result and a short message (see also image below next bullet point for score count).  
     ![](/docs/website_screenshots/result_msg.png)
 - I want a question counter to know how far I have progressed in the quiz.
@@ -309,7 +310,7 @@ a new page is opened.
 #### Returning Visitor Goals
 - I want an option to view the site in dark mode.
     - There is a dark mode toggle option located in the top right corner of each page of the website. The user can toggle between
-    dark and light mode depending on their preference.  
+    dark and light modes depending on their preference.  
     ![](/docs/website_screenshots/dark_mode_toggle.png)  
 - I want to be presented with different questions each time I play.
     - There is a pool of 20 questions and 5 of these are randomly selected each time the game is played.
@@ -326,29 +327,29 @@ a new page is opened.
 #### Known
 - On mobile touch screen when an answer option is selected it changes colour correctly to green or red depending on whether or not
 the answer is right or wrong. However, when the next question and answers are displayed, the answer container that was selected on
-the previous question maintains a hover effect, that is, its background is light gray instead of purple like the other three answer
+the previous question maintains a hover effect, that is, its background is light grey instead of purple like the other three answer
 containers.
 - When dark mode is toggled on there is a slight regression to the default light mode when you navigate to a new page.
-- Before the page has fully loaded some HTML placeholder content can be see. For example in the question field "This is a question"
+- Before the page has fully loaded some HTML placeholder content can be seen. For example in the question field, "This is a question"
 is visible briefly, and "Answer" in the answer fields. A loading page could be a possible solution.
 #### Solved
 - The quiz content was spilling over the top and bottom of the quiz container at smaller screen sizes. I changed the container height
 from 50vh to fit-content.
-- The console was reporting errors relating to the question number display and to the score result displayed on the quiz over page.
+- The console was reporting errors relating to the question number display and the score result displayed on the quiz over page.
 I re-arranged the JavaScript file and made a dedicated file for the quiz over page which resolved this. I also removed the JavaScript
 link from the index page as there was no need for this and it was also logging errors in the console.
-- There was an issue of the hover effect still being applied after the correct and incorrect classes were applied to the answers
+- There was an issue with the hover effect still being applied after the correct and incorrect classes were applied to the answers
 after clicking on them. This resulted in these class effects only being visible if you removed the cursor from the area. The
-background areas did not turn green or red if the cursor remained over the area. Instead the area displayed the hover effect of a
+background areas did not turn green or red if the cursor remained over the area. Instead, the area displayed the hover effect of a
 grey background. I added a hover function to these classes to alleviate the issue.
 - The content from the quiz area was overflowing onto the dark mode toggle area. This was resolved by adding a wrapper div to
 the toggle-icon div. Then setting and changing the flex alignment of the wrapper div, below the toggle wrapper, to flex-start as opposed to center. This means the top of the quiz area remains constant, just below the toggle area, even though the quiz area grows
 or shrinks depending on its content.
 - The answer field containers were of uneven size on smaller screens. Where answer fields had longer text, two lines of text were
 created. The size of the container would increase causing some containers to be double the size of the others displayed. I made each
-container be of a larger size and aligned the text centrally. This maintains uniformity and also has the benefit of each of the
-containers being larger, which improves user experience on small screens.  
-- An "Uncaught ReferenceError: questionsArray is not defined" message was logging in the console on the home page and on the quiz over
+container larger and aligned the text centrally. This maintains uniformity and also has the benefit of each of the containers
+being larger, which improves user experience on small screens.  
+- An "Uncaught ReferenceError: questionsArray is not defined" message was logging in the console on the home page and the quiz over
 page. This was because the questionsArray is located in the questions.js file, which is not linked on these two pages. So when the
 startQuiz function was being called, it then couldn't find the questionsArray. I resolved this by adding a "typeof" line of code.
 This instructs the startQuiz function to run if the questionsArray is not undefined, that is, if it is defined, then run.
@@ -376,14 +377,14 @@ The steps below describe how to fork or clone the repository if desired.
 2. Navigate to the [repository](https://github.com/decant09/learn-the-lingo-quiz) for this website.
 3. Click the Fork button in the top right corner.
 4. You will be brought to a new page with a short form to be completed.
-5. Upon completing click on the "Create fork" button and this will create a fork of the repository in your personal account.
+5. Upon completing, click on the "Create fork" button and this will create a fork of the repository in your personal account.
 
 #### How to Clone
 1. Log in to GitHub.
 2. Navigate to the [repository](https://github.com/decant09/learn-the-lingo-quiz) for this website.
 3. Click on the Code button and a modal will appear.
 4. Within this modal select the local tab.
-5. Within this tab there is HTTPS, SSH or GitHub CLI tab.
+5. Within this tab there are HTTPS, SSH, or GitHub CLI tabs.
 6. Click on the HTTPS tab and copy the link shown.
 7. In your development environment open the terminal.
 8. Change the current working directory to the location where you want the cloned directory to be.
