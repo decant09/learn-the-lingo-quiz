@@ -14,7 +14,7 @@ const quizLength = 5;
 const toggleIcon = document.querySelector(".toggle-icon");
 
 toggleIcon.addEventListener('click', function() {
-    document.body.classList.toggle('dark')
+    document.body.classList.toggle('dark');
     var mode;
     if(document.body.classList.contains('dark')){
         toggleIcon.firstElementChild.className = 'far fa-moon';
@@ -34,7 +34,7 @@ setInterval(function() {
     }else{
     document.body.classList = '';
     }
-}, 5)
+}, 5);
 
 function startQuiz() {
     questionNumber = 0;
@@ -47,7 +47,7 @@ function getNextQuestion() {
     if(questionsPool.length === 0 || questionNumber >= quizLength) {
         localStorage.setItem('currentPlayerResult', scoreTotal);
         return window.location.assign('quiz_over.html');
-    };
+    }
     questionNumber++;
     questionNumberValue.innerText = `${questionNumber}/${quizLength}`;
 
@@ -62,7 +62,7 @@ function getNextQuestion() {
 
     questionsPool.splice(questionIndex, 1);
     allowingAnswers =  true;
-};
+}
 
 answers.forEach(function(answer) {
     answer.addEventListener('click', function(e) {
@@ -75,7 +75,7 @@ answers.forEach(function(answer) {
         let assignClass = 'incorrect';
             if (chosenAnswer == displayedQuestion.correctAnswer) {
                 assignClass = 'correct';
-            };
+            }
 
             if(assignClass === 'correct') {
                 increaseScore(20);

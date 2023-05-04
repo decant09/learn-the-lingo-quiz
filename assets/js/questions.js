@@ -159,4 +159,4 @@ let questionsArray = [
         answer4: 'D. Telling off',
         correctAnswer: 3
     },
-]
+];
