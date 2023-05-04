@@ -266,6 +266,7 @@ Google lighthouse was used to test for accessibilty for each page.
 
 ### Manual
 - I used Google Dev Tools to test for screen responsiveness.  
+![](/docs/website_screenshots/mobile_responsive.png)  
 - I tested on different browsers (chrome, firefox, safari & edge) to ensure the website performs as expected across all of these.
 - I tested on android and iPhone devices.
 - I tested all the buttons and answers fields on the website manually to ensure that they all work as expected. Upon hovering over
@@ -287,8 +288,7 @@ a new page is opened.
     ![](/docs/website_screenshots/quiz_over_btns.png)  
 - I want the website to be responsive to the device screen size that I am using.
     - The website is responsive to the device screen size it is being viewed on by using a simple design and a media query
-    where required.  
-    ![](/docs/website_screenshots/mobile_responsive.png)  
+    where required (see image above in [manual testing](#manual)).  
 - I want to see a score count as I play and my score result on completing the quiz.
     - There is score display area located in the quiz head to the top right of the quiz. Once the user completes the quiz they
     are presented with their result and a short message (see also image below next bullet point for score count).  
@@ -324,18 +324,33 @@ a new page is opened.
 the answer is right or wrong. However, when the next question and answers are displayed, the answer container that was selected on
 the previous question maintains a hover effect, that is, its background is light gray instead of purple like the other three answer
 containers.
+- When dark mode is toggled on there is a slight regression to the default light mode when you navigate to a new page.
+- Before the page has fully loaded some HTML placeholder content can be see. For example in the question field "This is a question"
+is visible briefly, and "Answer" in the answer fields. A loading page could be a possible solution.
 #### Solved
+- The quiz content was spilling over the top and bottom of the quiz container at smaller screen sizes. I changed the container height
+from 50vh to fit-content.
+- The console was reporting errors relating to the question number display and to the score result displayed on the quiz over page.
+I re-arranged the JavaScript file and made a dedicated file for the quiz over page which resolved this. I also removed the JavaScript
+link from the index page as there was no need for this and it was also logging errors in the console.
+- There was an issue of the hover effect still being applied after the correct and incorrect classes were applied to the answers
+after clicking on them. This resulted in these class effects only being visible if you removed the cursor from the area. The
+background areas did not turn green or red if the cursor remained over the area. Instead the area displayed the hover effect of a
+grey background. I added a hover function to these classes to alleviate the issue.
+- The content from the quiz area was overflowing onto the dark mode toggle area. This was resolved by adding a wrapper div to
+the toggle-icon div. Then setting and changing the flex alignment of the wrapper div, below the toggle wrapper, to flex-start as opposed to centre. This means the top of the quiz area remains constant, just below the toggle area, even though the quiz area grows
+or shrinks depending on its content.
 - The answer field containers were of uneven size on smaller screens. Where answer fields had longer text, two lines of text were
 created. The size of the container would increase causing some containers to be double the size of the others displayed. I made each
 container be of a larger size and aligned the text centrally. This maintains uniformity and also has the benefit of each of the
-containers being larger which improves user experience on small screens.  
+containers being larger, which improves user experience on small screens.  
 - An "Uncaught ReferenceError: questionsArray is not defined" message was logging in the console on the home page and on the quiz over
 page. This was because the questionsArray is located in the questions.js file, which is not linked on these two pages. So when the
 startQuiz function was being called, it then couldn't find the questionsArray. I resolved this by adding a "typeof" line of code.
 This instructs the startQuiz funtion to run if the questionsArray is not undefined, that is, if it is defined, then run.
 - The answer containers, once selected, would shrink a little and cause the whole page contents to shift. This was due to
-there not being a solid border applied to the correct and incorrect class styling. I applied a border of 0.25rem solid and this
-resolved the issue.
+there not being a solid border applied to the correct and incorrect class styling. I applied a border of 0.25rem solid to resolve
+this.
 
 ## Deployment & Local Development
 ### Deployment
