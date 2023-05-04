@@ -56,7 +56,7 @@ function getNextQuestion() {
     question.innerText = displayedQuestion.question;
 
     answers.forEach(function(answer) {
-        const number = answer.dataset["option"];
+        const number = answer.dataset.option;
         answer.innerText = displayedQuestion["answer" + number];
     });
 
@@ -70,7 +70,7 @@ answers.forEach(function(answer) {
 
         allowingAnswers = false;
         const chosenOption = e.target;
-        const chosenAnswer = chosenOption.dataset["option"];
+        const chosenAnswer = chosenOption.dataset.option;
 
         let assignClass = 'incorrect';
             if (chosenAnswer == displayedQuestion.correctAnswer) {
