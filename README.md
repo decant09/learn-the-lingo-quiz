@@ -29,10 +29,10 @@ To visit the live link to Learn the Lingo on GitHub pages click [here](https://d
     - [Frameworks](#frameworks)
 - [Testing](#testing)
     - [W3C Validator](#w3c-validator)
-        - [HTML Testing](#html-testing)
-        - [CSS Testing](#css-testing)
+        - [HTML](#html)
+        - [CSS](#css)
     - [JShint](#jshint)
-        - [JavaScript](#javascript-testing)
+        - [JavaScript](#javascript)
     - [Accessibility](#accessibility)
         - [WebAIM](#webaim)
         - [Google Lighthouse](#google-lighthouse)
@@ -211,30 +211,33 @@ of submission.
 ## Testing
 
 ### W3C Validator
-#### HTML Testing
-- Home Page
-    - Result - <!-- No errors or warnings to show.-->  
-<!-- ![](/docs/testing/validator-testing-index.png) -->
-- Quiz Page
-    - Result - <!-- No errors or warnings to show.-->  
-<!-- ![](/docs/testing/validator-testing-schedule.png) -->
-- Quiz Over Page
-    - Result - <!--No errors or warnings to show.-->  
-<!-- ![](/docs/testing/validator-testing-contact.png) -->
+#### HTML
+- Home Page  
+    - Result - No errors or warnings to show.  
+    ![](/docs/testing/w3c_home_page_html.png)
+- Quiz Page  
+    - Result - No errors or warnings to show.  
+    ![](/docs/testing/w3c_quiz_html.png)
+- Quiz Over Page  
+    - Result - No errors or warnings to show.  
+    ![](/docs/testing/w3c_quiz_over_html.png)
 
-#### CSS Testing
+#### CSS
 - Style Sheet
     - Result - No errors found.  
-<!-- ![](/docs/testing/validator-testing-style.png) -->
+    ![](/docs/testing/w3c_style.png)
 
 ### JShint
-#### JavaScript Testing
+#### JavaScript
 - Script
-    - Result -
+    - Result - No errors or warnings  
+    ![](/docs/testing/jshint_script.png)
 - Questions
-    - Result -
+    - Result - No errors or warnings  
+    ![](/docs/testing/jshint_questions.png)
 - Quiz Over
-    - Result -
+    - Result - No errors or warnings  
+    ![](/docs/testing/jshint_quiz_over.png)
 
 ### Accessibility
 #### WebAIM
