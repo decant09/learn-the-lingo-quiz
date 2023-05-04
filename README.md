@@ -127,7 +127,8 @@ buttons to navigate back to the home page or to the quiz page again.
 -The button is styled with a box shadow to make it stand out as a button. There is a hover effect applied that changes the cursor
 to a pointer and makes the button pop up a fraction. This gives the appearance of it moving in a 3D direction out of the screen.
 - There is dark mode toggle icon to allow the user to change between the default light mode to dark mode. This is displayed on each
-of the pages of the website.
+of the pages of the website.  
+![](/docs/website_screenshots/home_page.png)  
 ### Quiz Page
 - The quiz page is made up of a quiz area with a shadow effect border applied.
 - Within this area there are three main components, the quiz head, the question display, and the associated answers options.
@@ -139,28 +140,41 @@ in total and how far they have progressed. When the page is loaded the question 
 - The score counter is placed under the heading labelled "score". It starts at 0 and increments by 20 as questions are answered
 correctly.
 - The question area displays the new question each time it is prompted to, this being when the page is loaded and when an answer
-option has been clicked.
+option has been clicked.  
+![](/docs/website_screenshots/quiz_page.png)  
 - Each question has its associated answers displayed below it. There are 4 possible answer choices of which only one is right. A
 hover effect is applied to the areas containing the answers. The results in the cursor changing to a pointer and the colour scheme
-of the area changing.
+of the area changing.  
+![](/docs/website_screenshots/quiz_page_hover.png)  
 - Once an answer option is chosen and clicked on the background colour changes to green, if the answer selected is correct, and red if
-incorrect. There is a brief delay applied before the next question is automatically displayed.
-- The quiz is complete once 5 questions have been answered prompting the quiz over page to be displayed. 
+incorrect. There is a brief delay applied before the next question is automatically displayed.  
+![](/docs/website_screenshots/quiz_page_green.png)  
+![](/docs/website_screenshots/quiz_page_red.png)  
+- The quiz is complete once 5 questions have been answered prompting the quiz over page to be displayed.  
+
 ### Quiz Over Page
 - This page shows the users score result with a message displayed beneath.
-- The message displayed depends on the score achieved.
-- There are two buttons displayed underneath and are stacked on top on each other. They have the same styling and hover effect
-aplied to them as the start button on the home page.
+- The message displayed depends on the score achieved. There are three possible messages, one for achieving a result of 100/100, one
+for over 50/100 but less than 100, and finally one for all other results, in other words results less than 50/100.
+- There are two buttons displayed underneath stacked on top on each other. They have the same styling and hover effect aplied to
+them as the start button on the home page.
 - The first button is labelled "try again" which when clicked taks tou the start of the quiz again.
-- The second button is labelled "home" and when clicked takes you to the home page.
+- The second button is labelled "home" and when clicked takes you to the home page.  
+![](/docs/website_screenshots/quiz_over_page_100_msg.png)  
+![](/docs/website_screenshots/quiz_over_page_o50_msg.png)  
+![](/docs/website_screenshots/quiz_over_page_u50_msg.png)  
 ### Dark Mode Toggle
-- The dark mode toggle is featured on each of the pages of the website in the same position on each, that is to the top right corner.
+- The dark mode toggle is featured on each of the pages of the website in the same position on each, that is to the top right corner.  
+![](/docs/website_screenshots/dark_mode_toggle.png)  
 - Its appearance is a font awesome icon, a sun or a moon, surrounded by a circle.
 - It is a clickable area which when clicked toggles the appearance of the website between the dark and light mode styles.
 - A sun icon is shown when the website is in light mode and the moon icon when in dark mode. The icon changes from one to the other
 depending on what mode you are currently viewing the page on.
 - The user can toggle between dark and light mode depending on their preference. This preference choice is maintained throughout the
-website regardless of whether or not a new page is visited.
+website regardless of whether or not a new page is visited.  
+![](/docs/website_screenshots/home_page_dark_mode.png)  
+![](/docs/website_screenshots/quiz_page_dark_mode.png)  
+![](/docs/website_screenshots/quiz_over_page_dark_mode.png)  
 ### Future Features
 - The website is based on the Scottish linguistic variation of English, as well as its own regional dialects. However, on a similar
 basis, I would like to include England and Ireland specific quizes.
