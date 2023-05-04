@@ -237,34 +237,41 @@ of submission.
 
 ### Accessibility
 #### WebAIM
-- I tested the contrast of the background colour versus the font colour using [WebAIM](website link).
-    -  Result -  - Pass.  
-<!-- ![](/docs/colour-palette/webaim-contrast-check.png)  -->
+- I tested the contrast of the font colours used against their respective background colours using WebAIM.
+- Black text on light gray background
+    - [Result](https://webaim.org/resources/contrastchecker/?fcolor=0F0916&bcolor=EDEAF0) - 16.46:1 - Pass.  
+    ![](/docs/testing/webaim_blk_lgr.png)  
+- White text on purple background
+    - [Result](https://webaim.org/resources/contrastchecker/?fcolor=FFFFFF&bcolor=4C2F6C) - 10.87:1 - Pass.  
+    ![](/docs/testing/webaim_wht_prp.png)  
+- Purple text on light gray background
+    - [Result](https://webaim.org/resources/contrastchecker/?fcolor=4C2F6C&bcolor=EDEAF0) - 9.13:1 - Pass.  
+    ![](/docs/testing/webaim_prp_lgr.png)  
+- White text on dark gray background
+    - [Result](https://webaim.org/resources/contrastchecker/?fcolor=FFFFFF&bcolor=272D3C) - 13.75:1 - Pass.  
+    ![](/docs/testing/webaim_wht_dgr.png)  
+
 #### Google Lighthouse
+Google lighthouse was used to test for accessibilty for each page.
 - Home Page
-    - Result -   
-<!-- ![](/docs/testing/lighthouse-testing-index.png) -->
+    - Result - 100  
+    ![](/docs/testing/home_page_lighthouse.png)  
 - Quiz Page
-    - Result -   
-<!-- ![](/docs/testing/lighthouse-testing-schedule.png) -->
+    - Result - 100  
+    ![](/docs/testing/quiz_page_lighthouse.png)  
 - Quiz Over Page
-    - Result -  
-<!-- ![](/docs/testing/lighthouse-testing-contact.png) -->
+    - Result - 100 
+    ![](/docs/testing/quiz_over_page_lighthouse.png)  
 
 ### Manual
 - I used Google Dev Tools to test for screen responsiveness.  
-
 - I tested on different browsers (chrome, firefox, safari & edge) to ensure the website performs as expected across all of these.
-
 - I tested on android and iPhone devices.
-
 - I tested all the buttons and answers fields on the website manually to ensure that they all work as expected. Upon hovering over
 them the desired effect is realised. The main buttons redirect appropriately to the website areas they are linked to. The answer
 fields behave as intended.
-
 - The dark mode toggle icon changes appearance upon clicking. The dark mode colour scheme is maintained throughout the website when
 a new page is opened.
-
 - I spellchecked the website by copying the text content to [Online Spellcheck](https://www.online-spellcheck.com/).
 
 ### Testing User Stories from User Experience (UX) Section

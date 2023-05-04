@@ -57,7 +57,7 @@ let questionsArray = [
     },
     {
         question: 'The use of the word “poke” means',
-        answer1: 'A. Hawaiin food',
+        answer1: 'A. Hawaiian food',
         answer2: 'B. To prod someone',
         answer3: 'C. A container of chips',
         answer4: 'D. To get sick',
@@ -138,7 +138,7 @@ let questionsArray = [
     {
         question: '“An empty” on a night out would be in reference to',
         answer1: 'A. Funds',
-        answer2: 'B. A houseparty',
+        answer2: 'B. A house party',
         answer3: 'C. Dancefloor',
         answer4: 'D. Glass',
         correctAnswer: 2
