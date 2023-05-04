@@ -388,10 +388,28 @@ The steps below describe how to fork or clone the repository if desired.
 
 ## Credits
 ### Code Used
--  
+-  The Build a quiz app [YouTube](https://www.youtube.com/watch?v=u98ROZjBWy8&list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx) tutorial by James Q Quick was used to help build the JavaScript code needed for the quiz.
+- I referred to the following YouTube tutorials when coding the JavaScript for the dark mode toggle:
+    - Dark Mode with HTML, CSS, and JavaScript / Switching between Dark and Light Themes / HTML, CSS, JS by
+    [Code and Create](https://www.youtube.com/watch?v=N3-K5G2qFDM).
+    - Dark / Light Mode Theme Toggle with CSS and JavaScript | Tutorial for Beginners by
+    [Future Coders](https://www.youtube.com/watch?v=D2V2DT1FCNk).
+- For help with determining the dark mode status from local storage I referred to:
+    - Dark Mode JavaScript toggle using localStorage even on reload by [codewj](https://www.youtube.com/watch?v=-Jt_h91uXkQ).
 
 ### Resources
-
+- For tips relating to root font rize and how to override to create a better user experience on
+[freecodecamp](https://www.freecodecamp.org/news/override-root-font-size-for-a-better-user-experience/).
+- Referred to the GeekProbin [YouTube](https://www.youtube.com/watch?v=-cX5jnQgqSM) tutorial for CSS styling.
+- [CSS Tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/#prop-align-items),
+[Flexbox Froggy](https://flexboxfroggy.com/), and [Kevin Powell](https://www.youtube.com/watch?v=u044iM9xsWU) helped me with flexbox
+issues.
+- Use of the "typeof" operator from [Dmitri Pavlutin](https://dmitripavlutin.com/javascript-typeof-instanceof/).
+- For help with addEventListener on [MDN](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener).
+- W3Schools for [JSON.parse](https://www.w3schools.com/js/js_json_parse.asp) and
+[JSON.stringify](https://www.w3schools.com/js/js_json_stringify.asp).
+- [Stack Overflow](https://stackoverflow.com/questions/10323392/in-javascript-jquery-what-does-e-mean)
+for help with event handlers.
 ### Acknowledgements
 - My Mentor Chris Quinn for continuous helpful feedback.
 - Tutor support at Code Institute for their amazing support.
