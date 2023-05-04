@@ -78,6 +78,7 @@ to have some fun, or to help people improve their understanding of the local lin
 - I want an option to be able to play again.
 #### Frequent Visitor Goals
 - I want a leaderboard so I can see how well I have performed (furture implementation).
+- I want a number of quiz options.
 ### Design
 #### Colour Scheme
 - Light Mode Palette  
@@ -275,36 +276,48 @@ a new page is opened.
 - I spellchecked the website by copying the text content to [Online Spellcheck](https://www.online-spellcheck.com/).
 
 ### Testing User Stories from User Experience (UX) Section
-<!-- attach supporting images -->
 #### First Time Visitor Goals
 - I want to know what the website is about upon arriving.
-    - There is a clear website title on the home page and a brief introduction as to what the website is.
+    - There is a clear website title on the home page, a brief introduction as to what the website is, and an invitation to take
+    the quiz.  
+    ![](/docs/website_screenshots/home_page_text.png)
 - I want the website to be easily navigatable.
-    - There are easy to locate labelled buttons on each page which which take you to where tou would expect.
+    - There are easy to locate labelled buttons on each page which take you to where you would expect.  
+    ![](/docs/website_screenshots/start_btn.png)  
+    ![](/docs/website_screenshots/quiz_over_btns.png)  
 - I want the website to be responsive to the device screen size that I am using.
     - The website is responsive to the device screen size it is being viewed on by using a simple design and a media query
-    where required.
+    where required.  
+    ![](/docs/website_screenshots/mobile_responsive.png)  
 - I want to see a score count as I play and my score result on completing the quiz.
     - There is score display area located in the quiz head to the top right of the quiz. Once the user completes the quiz they
-    are presented with their result and a short message.
+    are presented with their result and a short message (see also image below next bullet point for score count).  
+    ![](/docs/website_screenshots/result_msg.png)
 - I want a question counter to know how far I have progressed in the quiz.
     - There is a question counter area located in the quiz head to the top left of the quiz to show how far the user has
-    progressed.
+    progressed.  
+    ![](/docs/website_screenshots/quiz_head.png)  
 - I want to know if I have answered the quiz question correctly.
     - Once an answer option is clicked on the background colour changes to green if the answer selected is correct. If the answer
-    selected is incorrect the background changes to red.
+    selected is incorrect the background changes to red.  
+    ![](/docs/website_screenshots/answer_right.png)  
+    ![](/docs/website_screenshots/answer_wrong.png)  
 #### Returning Visitor Goals
 - I want an option to view the site in dark mode.
     - There is a dark mode toggle option located in the top right corner of each page of the website. The user can toggle between
-    dark and light mode depending on their preference.
+    dark and light mode depending on their preference.  
+    ![](/docs/website_screenshots/dark_mode_toggle.png)  
 - I want to be presented with different questions each time I play.
     - There is a pool of 20 questions and 5 of these are randomly selected each time the game is played.
 - I want an option to be able to play again.
-    - Once the user completes the quiz a page is loaded with their result and an option to go to the home page or to try the quiz
-    again.
+    - Once the user completes the quiz, a page is loaded with their result and an option to go to the home page or to try the quiz
+    again.  
+    ![](/docs/website_screenshots/quiz_over_btns.png)  
 #### Frequent Visitor Goals
-
-
+- I want a leaderboard so I can see how well I have performed.
+- I want a number of quiz options.
+    - Both of these goals have not yet been met, but as discussed in the [future features](#future-features) section, these goals
+    will be met with the future implementation plans mentioned there.
 ### Bugs
 #### Known
 
