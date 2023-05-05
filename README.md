@@ -325,16 +325,12 @@ a new page is opened.
     will be met with the future implementation plans mentioned there.
 ### Bugs
 #### Known
-- On mobile touch screen when an answer option is selected it changes colour correctly to green or red depending on whether or not
-the answer is right or wrong. However, when the next question and answers are displayed, the answer container that was selected on
-the previous question maintains a hover effect, that is, its background is light grey instead of purple like the other three answer
-containers.
 - When dark mode is toggled on there is a slight regression to the default light mode when you navigate to a new page.
 - Before the page has fully loaded some HTML placeholder content can be seen. For example in the question field, "This is a question"
 is visible briefly, and "Answer" in the answer fields. A loading page could be a possible solution.
-- On firefox, safari, and edge, the dark mode toggle changes accordingly when clicked. When a new page is loaded, if dark mode was
-previously selected, the new page correctly displays in dark mode. However, the icon displayed changes back to a sun when the moon
-icon should be displayed.
+- The dark mode toggle changes the mode accordingly when clicked. When a new page is loaded, if dark mode was previously selected,
+the new page correctly displays in dark mode. However, the icon displayed changes back to a sun when the moon icon should be displayed.
+This previously was working as intended but I noticed too late that it was now an issue.
 - I was not able to resolve these bugs before the submission of the project but I would like to in future.
 #### Solved
 - The quiz content was spilling over the top and bottom of the quiz container at smaller screen sizes. I changed the container height
@@ -360,6 +356,10 @@ This instructs the startQuiz function to run if the questionsArray is not undefi
 - The answer containers, once selected, would shrink a little and cause the whole page contents to shift. This was due to
 there not being a solid border applied to the correct and incorrect class styling. I applied a border of 0.25rem solid to resolve
 this.
+- On touch screen when an answer option was selected it changed colour correctly to green or red depending on whether or not the
+answer was right or wrong. However, when the next question and answers were displayed, the answer container that was selected on
+the previous question maintained a hover effect, that is, its background was light grey instead of purple like the other three answer
+containers. I used a media query to resolve this issue.
 
 ## Deployment & Local Development
 ### Deployment
@@ -419,6 +419,8 @@ issues.
 [JSON.stringify](https://www.w3schools.com/js/js_json_stringify.asp).
 - [Stack Overflow](https://stackoverflow.com/questions/10323392/in-javascript-jquery-what-does-e-mean)
 for help with event handlers.
+- To help resolve the hover bug on touchscreens I referred to Kevin Powell's YouTube
+[video](https://www.youtube.com/watch?v=uuluAyw9AI0) on dealing with hover on mobile.  
 ### Acknowledgements
 - My Mentor Chris Quinn for continuous helpful feedback.
 - Tutor support at Code Institute for their amazing support.
