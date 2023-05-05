@@ -118,8 +118,8 @@ Wireframes were created for the website layout. The layout is the same across di
 
 ## Features
 - The website is made up of three pages, the home page, the quiz page, and the quiz over page. The home page contains a start
-button that takes you to the quiz itself. When the quiz is complete, the quiz over page is automatically opened. This page contains
-buttons to navigate back to the home page or to the quiz page again.
+button, that takes you to the quiz itself, and a rules button, that shows the rules in a modal. When the quiz is complete, the quiz
+over page is automatically opened. This page contains buttons to navigate back to the home page or to the quiz page again.
 ### Home Page  
 - The home page displays the title of the website clearly.
 - Below this, there is a brief introduction to the website and an invitation to take the quiz.
