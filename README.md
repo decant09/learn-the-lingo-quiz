@@ -3,7 +3,7 @@ Learn the Lingo Quiz is a quiz based learning modality for users to test their k
 game whereby you are presented with a phrase, or term, with four possible answers to choose from. It is aimed at people who are
 interested in the fun of linguistics and want to learn the local lingo.
 
-![](/docs/testing/am_i_responsive.png)
+![](/docs/testing/am_i_responsive.png)  
 
 To visit the live link to Learn the Lingo on GitHub pages click [here](https://decant09.github.io/learn-the-lingo-quiz/).  
 
@@ -110,11 +110,11 @@ to confirm the choice.
 #### Wireframes
 Wireframes were created for the website layout. The layout is the same across different device screen sizes.
 - Home Page  
-![](/docs/wireframes/wireframe_home_page.png)
+![](/docs/wireframes/wireframe_home_page.png)  
 - Quiz Page  
-![](/docs/wireframes/wireframe_quiz_page.png)
+![](/docs/wireframes/wireframe_quiz_page.png)  
 - Quiz Over Page  
-![](/docs/wireframes/wireframe_quiz_over_page.png)
+![](/docs/wireframes/wireframe_quiz_over_page.png)  
 
 ## Features
 - The website is made up of three pages, the home page, the quiz page, and the quiz over page. The home page contains a start
