@@ -164,7 +164,7 @@ ul {
 }
   
 .close:hover {
-    color:#0F0916;
+    color: var(--primary-font-color);
     cursor: pointer;
 }
 
