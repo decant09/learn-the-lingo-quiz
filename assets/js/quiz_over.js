@@ -1,9 +1,9 @@
 const currentPlayerResult = localStorage.getItem('currentPlayerResult');
 const scoreResult = document.getElementById('score-result');
 const resultMessage = document.getElementById('message');
-
+// display the result from localStorage
 scoreResult.innerText = `You scored: ${currentPlayerResult}/100`;
-
+// display particular message based on result
 function message() {
     if(currentPlayerResult >= 100){
         resultMessage.innerHTML = (`<h2>Well done! You're a local!</h2>`);
