@@ -77,7 +77,7 @@ find this challenging to encounter but I find it particularly interesting and fu
 - I want an option to be able to play again.
 #### Frequent Visitor Goals
 - I want a leaderboard so I can see how well I have performed (future implementation).
-- I want a number of quiz options.
+- I want a number of quiz options (future implementation).
 ### Design
 #### Colour Scheme
 - Light Mode Palette  
@@ -123,7 +123,7 @@ buttons to navigate back to the home page or to the quiz page again.
 - The home page displays the title of the website clearly.
 - Below this, there is a brief introduction to the website and an invitation to take the quiz.
 - Below the introduction, there is a button labelled "start" that when clicked takes you to the quiz page.
--The button is styled with a box shadow to make it stand out as a button. There is a hover effect applied that changes the cursor
+- The button is styled with a box shadow to make it stand out as a button. There is a hover effect applied that changes the cursor
 to a pointer and makes the button pop up a fraction. This gives the appearance of it moving in a 3D direction out of the screen.
 - There is a dark mode toggle icon to allow the user to change between the default light mode to dark mode. This is displayed on each
 of the pages of the website.  
@@ -190,7 +190,7 @@ time of submission.
 - JavaScript
 ### Frameworks
 - Git
-    - Used for version control by utilising the Gitpod and Codeanywhere terminals to commit to Git and Push to GitHub.
+    - Used for version control by utilising the Gitpod and Codeanywhere terminals to commit to Git and push to GitHub.
 - [Google Fonts](https://fonts.google.com/)
     - Google fonts were used to import the Poppins font family into the style.css file.
 - GitHub
@@ -230,13 +230,13 @@ time of submission.
 ### JShint
 #### JavaScript
 - Script
-    - Result - No errors or warnings  
+    - Result - No errors or warnings.  
     ![](/docs/testing/jshint_script.png)
 - Questions
-    - Result - No errors or warnings  
+    - Result - No errors or warnings.  
     ![](/docs/testing/jshint_questions.png)
 - Quiz Over
-    - Result - No errors or warnings  
+    - Result - No errors or warnings.  
     ![](/docs/testing/jshint_quiz_over.png)
 
 ### Accessibility
@@ -332,6 +332,10 @@ containers.
 - When dark mode is toggled on there is a slight regression to the default light mode when you navigate to a new page.
 - Before the page has fully loaded some HTML placeholder content can be seen. For example in the question field, "This is a question"
 is visible briefly, and "Answer" in the answer fields. A loading page could be a possible solution.
+- On firefox, safari, and edge, the dark mode toggle changes accordingly when clicked. When a new page is loaded, if dark mode was
+previously selected, the new page correctly displays in dark mode. However, the icon displayed changes back to a sun when the moon
+icon should be displayed.
+- I was not able to resolve these bugs before the submission of the project but I would like to in future.
 #### Solved
 - The quiz content was spilling over the top and bottom of the quiz container at smaller screen sizes. I changed the container height
 from 50vh to fit-content.
