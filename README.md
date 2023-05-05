@@ -68,6 +68,7 @@ find this challenging to encounter but I find it particularly interesting and fu
 - I want to know what the website is about upon arriving.
 - I want the website to be easily navigatable.
 - I want the website to be responsive to the device screen size that I am using.
+- I want to know the rules of the quiz.
 - I want to see a score count as I play and my score result on completing the quiz.
 - I want a question counter to know how far I have progressed in the quiz.
 - I want to know if I have answered the quiz question correctly.
@@ -123,11 +124,15 @@ buttons to navigate back to the home page or to the quiz page again.
 - The home page displays the title of the website clearly.
 - Below this, there is a brief introduction to the website and an invitation to take the quiz.
 - Below the introduction, there is a button labelled "start" that when clicked takes you to the quiz page.
-- The button is styled with a box shadow to make it stand out as a button. There is a hover effect applied that changes the cursor
+- Below the start button, there is a button labelled "rules". When clicked, a modal appears with the rules. The main background behind
+the modal darkens making the modal the focus of the page when open. The modal has a close button that when clicked closes the modal.
+Clicking any area outside the modal will also close it.
+- The buttons are styled with a box shadow to make them stand out as buttons. There is a hover effect applied that changes the cursor
 to a pointer and makes the button pop up a fraction. This gives the appearance of it moving in a 3D direction out of the screen.
 - There is a dark mode toggle icon to allow the user to change between the default light mode to dark mode. This is displayed on each
 of the pages of the website.  
 ![](/docs/website_screenshots/home_page.png)  
+![](/docs/website_screenshots/home_page_rules_modal.png)  
 ### Quiz Page
 - The quiz page is made up of a quiz area with a shadow effect border applied.
 - Within this area, there are three main components, the quiz head, the question display, and the associated answers options.
@@ -238,7 +243,9 @@ time of submission.
 - Quiz Over
     - Result - No errors or warnings.  
     ![](/docs/testing/jshint_quiz_over.png)
-
+- Rules
+    - Result - No errors or warnings.  
+    ![](/docs/testing/jshint_rules.png)
 ### Accessibility
 #### WebAIM
 - I tested the contrast of the font colours used against their respective background colours using WebAIM.
@@ -289,11 +296,15 @@ a new page is opened.
     ![](/docs/website_screenshots/home_page_text.png)
 - I want the website to be easily navigatable.
     - There are easy to locate labelled buttons on each page which take you to where you would expect.  
-    ![](/docs/website_screenshots/start_btn.png)  
+    ![](/docs/website_screenshots/home_page_btns.png)  
     ![](/docs/website_screenshots/quiz_over_btns.png)  
 - I want the website to be responsive to the device screen size that I am using.
     - The website is responsive to the device screen size it is being viewed on by using a simple design and a media query
     where required (see image above in [manual testing](#manual)).  
+- I want to know the rules of the quiz.
+    - There is rules button that when clicked on opens a modal containing the rules.  
+    ![](/docs/website_screenshots/home_page_btns.png)  
+    ![](/docs/website_screenshots/home_page_rules_modal.png)  
 - I want to see a score count as I play and my score result on completing the quiz.
     - There is a score display area located in the quiz head to the top right of the quiz. Once the user completes the quiz they
     are presented with their result and a short message (see also image below next bullet point for score count).  
@@ -405,6 +416,8 @@ The steps below describe how to fork or clone the repository if desired.
     [Future Coders](https://www.youtube.com/watch?v=D2V2DT1FCNk).
 - For help with determining the dark mode status from local storage I referred to:
     - Dark Mode JavaScript toggle using localStorage even on reload by [codewj](https://www.youtube.com/watch?v=-Jt_h91uXkQ).
+- To add the rules modal I used code from the [W3Schools'](https://www.w3schools.com/howto/howto_css_modals.asp) page:
+    - How To Create a Modal Box.
 
 ### Resources
 - For tips relating to root font size and how to override to create a better user experience on
